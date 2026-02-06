@@ -1,0 +1,314 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;\red24\green24\blue24;\red52\green55\blue54;\red228\green234\blue244;
+\red236\green241\blue247;\red22\green79\blue199;\red205\green26\blue29;\red164\green69\blue11;\red24\green112\blue43;
+\red111\green14\blue195;\red77\green80\blue85;\red134\green86\blue3;}
+{\*\expandedcolortbl;;\cssrgb\c12157\c12157\c12157;\cssrgb\c26667\c27843\c27451;\cssrgb\c91373\c93333\c96471;
+\cssrgb\c94118\c95686\c97647;\cssrgb\c9804\c40392\c82353;\cssrgb\c85098\c18824\c14510;\cssrgb\c70980\c34902\c3137;\cssrgb\c9412\c50196\c21961;
+\cssrgb\c51765\c18824\c80784;\cssrgb\c37255\c38824\c40784;\cssrgb\c60000\c41176\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28300\viewh14560\viewkind0
+\deftab720
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Harika. Senin i\'e7in hem T\'fcrk\'e7e hem de \uc0\u304 ngilizce metinleri i\'e7eren, modern, 
+\f1\b Speed Lab
+\f0\b0  marka kimli\uc0\u287 ine uygun (Dark Mode ve Acid Green detayl\u305 ) tek bir \cf3 \cb4 \strokec3 index.html\cf2 \cb1 \strokec2  dosyas\uc0\u305  haz\u305 rlad\u305 m.\
+Bu dosyada basit bir "Dil De\uc0\u287 i\u351 tirme (Language Toggle)" butonu da var. Kullan\u305 c\u305  sayfay\u305  a\'e7t\u305 \u287 \u305 nda istedi\u287 i dili se\'e7ip okuyabilir.\
+Bunu direkt olarak \cf3 \cb4 \strokec3 aarican1.github.io\cf2 \cb1 \strokec2  veya benzeri bir yerde yay\uc0\u305 nlayabilirsin.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb5 \strokec3 HTML\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\fs48 \cf3 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf6 \cb5 \strokec6 <!DOCTYPE 
+\f1\b html
+\f0\b0 >\cf3 \strokec3 \
+<\cf7 \strokec7 html\cf3 \strokec3  \cf8 \strokec8 lang\cf3 \strokec3 =\cf9 \strokec9 "tr"\cf3 \strokec3 >\
+<\cf7 \strokec7 head\cf3 \strokec3 >\
+    <\cf7 \strokec7 meta\cf3 \strokec3  \cf8 \strokec8 charset\cf3 \strokec3 =\cf9 \strokec9 "UTF-8"\cf3 \strokec3 >\
+    <\cf7 \strokec7 meta\cf3 \strokec3  \cf8 \strokec8 name\cf3 \strokec3 =\cf9 \strokec9 "viewport"\cf3 \strokec3  \cf8 \strokec8 content\cf3 \strokec3 =\cf9 \strokec9 "width=device-width, initial-scale=1.0"\cf3 \strokec3 >\
+    <\cf7 \strokec7 title\cf3 \strokec3 >Speed Lab - Privacy Policy & Terms</\cf7 \strokec7 title\cf3 \strokec3 >\
+    <\cf7 \strokec7 style\cf3 \strokec3 >\
+        \cf10 \strokec10 :root\cf3 \strokec3  \{\
+            --bg-color: \cf8 \strokec8 #121212\cf3 \strokec3 ;\
+            --card-bg: \cf8 \strokec8 #1e1e1e\cf3 \strokec3 ;\
+            --text-color: \cf8 \strokec8 #e0e0e0\cf3 \strokec3 ;\
+            --accent-color: \cf8 \strokec8 #ccff00\cf3 \strokec3 ; \cf11 \strokec11 /* Acid Green */\cf3 \strokec3 \
+            --secondary-text: \cf8 \strokec8 #a0a0a0\cf3 \strokec3 ;\
+        \}\
+\
+        \cf7 \strokec7 body\cf3 \strokec3  \{\
+            font-family: -apple-system, BlinkMacSystemFont, \cf9 \strokec9 "Segoe UI"\cf3 \strokec3 , Roboto, Helvetica, Arial, sans-serif;\
+            background-color: \cf6 \strokec6 var\cf3 \strokec3 (--bg-color);\
+            color: \cf6 \strokec6 var\cf3 \strokec3 (--text-color);\
+            margin: \cf8 \strokec8 0\cf3 \strokec3 ;\
+            padding: \cf8 \strokec8 0\cf3 \strokec3 ;\
+            line-height: \cf8 \strokec8 1.6\cf3 \strokec3 ;\
+        \}\
+\
+        \cf10 \strokec10 .container\cf3 \strokec3  \{\
+            max-width: \cf8 \strokec8 800px\cf3 \strokec3 ;\
+            margin: \cf8 \strokec8 40px\cf3 \strokec3  auto;\
+            padding: \cf8 \strokec8 20px\cf3 \strokec3 ;\
+        \}\
+\
+        \cf10 \strokec10 .language-switcher\cf3 \strokec3  \{\
+            display: flex;\
+            justify-content: flex-end;\
+            margin-bottom: \cf8 \strokec8 20px\cf3 \strokec3 ;\
+            gap: \cf8 \strokec8 10px\cf3 \strokec3 ;\
+        \}\
+\
+        \cf10 \strokec10 .lang-btn\cf3 \strokec3  \{\
+            background: transparent;\
+            border: \cf8 \strokec8 1px\cf3 \strokec3  solid \cf6 \strokec6 var\cf3 \strokec3 (--accent-color);\
+            color: \cf6 \strokec6 var\cf3 \strokec3 (--accent-color);\
+            padding: \cf8 \strokec8 8px\cf3 \strokec3  \cf8 \strokec8 16px\cf3 \strokec3 ;\
+            cursor: pointer;\
+            border-radius: \cf8 \strokec8 20px\cf3 \strokec3 ;\
+            font-weight: bold;\
+            transition: all \cf8 \strokec8 0.3s\cf3 \strokec3  ease;\
+        \}\
+\
+        \cf10 \strokec10 .lang-btn.active\cf3 \strokec3 , \cf10 \strokec10 .lang-btn:hover\cf3 \strokec3  \{\
+            background: \cf6 \strokec6 var\cf3 \strokec3 (--accent-color);\
+            color: \cf6 \strokec6 var\cf3 \strokec3 (--bg-color);\
+        \}\
+\
+        \cf10 \strokec10 .content-card\cf3 \strokec3  \{\
+            background-color: \cf6 \strokec6 var\cf3 \strokec3 (--card-bg);\
+            padding: \cf8 \strokec8 40px\cf3 \strokec3 ;\
+            border-radius: \cf8 \strokec8 12px\cf3 \strokec3 ;\
+            box-shadow: \cf8 \strokec8 0\cf3 \strokec3  \cf8 \strokec8 4px\cf3 \strokec3  \cf8 \strokec8 20px\cf3 \strokec3  \cf6 \strokec6 rgba\cf3 \strokec3 (\cf8 \strokec8 0\cf3 \strokec3 ,\cf8 \strokec8 0\cf3 \strokec3 ,\cf8 \strokec8 0\cf3 \strokec3 ,\cf8 \strokec8 0.5\cf3 \strokec3 );\
+            border-top: \cf8 \strokec8 4px\cf3 \strokec3  solid \cf6 \strokec6 var\cf3 \strokec3 (--accent-color);\
+        \}\
+\
+        \cf7 \strokec7 h1\cf3 \strokec3  \{\
+            color: \cf6 \strokec6 var\cf3 \strokec3 (--accent-color);\
+            font-size: \cf8 \strokec8 2rem\cf3 \strokec3 ;\
+            margin-bottom: \cf8 \strokec8 10px\cf3 \strokec3 ;\
+            text-transform: uppercase;\
+            letter-spacing: \cf8 \strokec8 1px\cf3 \strokec3 ;\
+        \}\
+\
+        \cf10 \strokec10 .date\cf3 \strokec3  \{\
+            color: \cf6 \strokec6 var\cf3 \strokec3 (--secondary-text);\
+            font-size: \cf8 \strokec8 0.9rem\cf3 \strokec3 ;\
+            margin-bottom: \cf8 \strokec8 30px\cf3 \strokec3 ;\
+            display: block;\
+        \}\
+\
+        \cf7 \strokec7 h2\cf3 \strokec3  \{\
+            color: \cf8 \strokec8 #fff\cf3 \strokec3 ;\
+            border-bottom: \cf8 \strokec8 1px\cf3 \strokec3  solid \cf8 \strokec8 #333\cf3 \strokec3 ;\
+            padding-bottom: \cf8 \strokec8 10px\cf3 \strokec3 ;\
+            margin-top: \cf8 \strokec8 30px\cf3 \strokec3 ;\
+            font-size: \cf8 \strokec8 1.3rem\cf3 \strokec3 ;\
+        \}\
+\
+        \cf7 \strokec7 h3\cf3 \strokec3  \{\
+            font-size: \cf8 \strokec8 1.1rem\cf3 \strokec3 ;\
+            margin-top: \cf8 \strokec8 20px\cf3 \strokec3 ;\
+            color: \cf6 \strokec6 var\cf3 \strokec3 (--accent-color);\
+        \}\
+\
+        \cf7 \strokec7 p\cf3 \strokec3 , \cf7 \strokec7 li\cf3 \strokec3  \{\
+            color: \cf8 \strokec8 #ccc\cf3 \strokec3 ;\
+            margin-bottom: \cf8 \strokec8 15px\cf3 \strokec3 ;\
+        \}\
+\
+        \cf7 \strokec7 ul\cf3 \strokec3  \{\
+            padding-left: \cf8 \strokec8 20px\cf3 \strokec3 ;\
+        \}\
+\
+        \cf7 \strokec7 a\cf3 \strokec3  \{\
+            color: \cf6 \strokec6 var\cf3 \strokec3 (--accent-color);\
+            text-decoration: none;\
+        \}\
+\
+        \cf7 \strokec7 a\cf10 \strokec10 :hover\cf3 \strokec3  \{\
+            text-decoration: underline;\
+        \}\
+\
+        \cf10 \strokec10 .hidden\cf3 \strokec3  \{\
+            display: none;\
+        \}\
+\
+        \cf7 \strokec7 footer\cf3 \strokec3  \{\
+            text-align: center;\
+            margin-top: \cf8 \strokec8 40px\cf3 \strokec3 ;\
+            color: \cf6 \strokec6 var\cf3 \strokec3 (--secondary-text);\
+            font-size: \cf8 \strokec8 0.8rem\cf3 \strokec3 ;\
+        \}\
+\
+        \cf10 \strokec10 @media\cf3 \strokec3  (max-width: \cf8 \strokec8 600px\cf3 \strokec3 ) \{\
+            \cf10 \strokec10 .content-card\cf3 \strokec3  \{\
+                padding: \cf8 \strokec8 20px\cf3 \strokec3 ;\
+            \}\
+            \cf7 \strokec7 h1\cf3 \strokec3  \{\
+                font-size: \cf8 \strokec8 1.5rem\cf3 \strokec3 ;\
+            \}\
+        \}\
+    </\cf7 \strokec7 style\cf3 \strokec3 >\
+</\cf7 \strokec7 head\cf3 \strokec3 >\
+<\cf7 \strokec7 body\cf3 \strokec3 >\
+\
+<\cf7 \strokec7 div\cf3 \strokec3  \cf8 \strokec8 class\cf3 \strokec3 =\cf9 \strokec9 "container"\cf3 \strokec3 >\
+    <\cf7 \strokec7 div\cf3 \strokec3  \cf8 \strokec8 class\cf3 \strokec3 =\cf9 \strokec9 "language-switcher"\cf3 \strokec3 >\
+        <\cf7 \strokec7 button\cf3 \strokec3  \cf8 \strokec8 class\cf3 \strokec3 =\cf9 \strokec9 "lang-btn active"\cf3 \strokec3  \cf8 \strokec8 onclick\cf3 \strokec3 =\cf9 \strokec9 "switchLanguage('tr')"\cf3 \strokec3 >TR</\cf7 \strokec7 button\cf3 \strokec3 >\
+        <\cf7 \strokec7 button\cf3 \strokec3  \cf8 \strokec8 class\cf3 \strokec3 =\cf9 \strokec9 "lang-btn"\cf3 \strokec3  \cf8 \strokec8 onclick\cf3 \strokec3 =\cf9 \strokec9 "switchLanguage('en')"\cf3 \strokec3 >EN</\cf7 \strokec7 button\cf3 \strokec3 >\
+    </\cf7 \strokec7 div\cf3 \strokec3 >\
+\
+    <\cf7 \strokec7 div\cf3 \strokec3  \cf8 \strokec8 class\cf3 \strokec3 =\cf9 \strokec9 "content-card"\cf3 \strokec3 >\
+        \
+        <\cf7 \strokec7 div\cf3 \strokec3  \cf8 \strokec8 id\cf3 \strokec3 =\cf9 \strokec9 "content-tr"\cf3 \strokec3 >\
+            <\cf7 \strokec7 h1\cf3 \strokec3 >Speed Lab - Gizlilik Politikas\uc0\u305  ve Kullan\u305 m Ko\u351 ullar\u305 </\cf7 \strokec7 h1\cf3 \strokec3 >\
+            <\cf7 \strokec7 span\cf3 \strokec3  \cf8 \strokec8 class\cf3 \strokec3 =\cf9 \strokec9 "date"\cf3 \strokec3 >Son G\'fcncelleme: 06 \uc0\u350 ubat 2026</\cf7 \strokec7 span\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Bu Gizlilik Politikas\uc0\u305  ve Kullan\u305 m Ko\u351 ullar\u305  ("S\'f6zle\u351 me"), <\cf7 \strokec7 strong\cf3 \strokec3 >Speed Lab</\cf7 \strokec7 strong\cf3 \strokec3 > ("Uygulama") mobil uygulamas\uc0\u305 n\u305 n kullan\u305 m\u305 , toplanan veriler ve kullan\u305 c\u305  sorumluluklar\u305 n\u305  belirler. Uygulamay\u305  indirerek ve kullanarak, a\u351 a\u287 \u305 da belirtilen t\'fcm \u351 artlar\u305  kabul etmi\u351  say\u305 l\u305 rs\u305 n\u305 z.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h2\cf3 \strokec3 >1. Toplanan Veriler ve Kullan\uc0\u305 m Amac\u305 </\cf7 \strokec7 h2\cf3 \strokec3 >\
+            \
+            <\cf7 \strokec7 h3\cf3 \strokec3 >a. Konum Verileri (Location Data):</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Speed Lab, h\uc0\u305 zlanma (0-100 km/s, 0-200 km/s), fren mesafesi (100-0 km/s) ve maksimum h\u305 z gibi performans de\u287 erlerini \'f6l\'e7mek i\'e7in cihaz\u305 n\u305 z\u305 n GPS (Konum) verilerini kullan\u305 r. Bu veriler anl\u305 k hesaplama amac\u305 yla kullan\u305 l\u305 r.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h3\cf3 \strokec3 >b. Hareket Sens\'f6rleri (Motion Sensors):</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Uygulama, G-Kuvveti (G-Force) \'f6l\'e7\'fcmleri i\'e7in cihaz\uc0\u305 n\u305 z\u305 n ivme\'f6l\'e7er ve jiroskop sens\'f6rlerini kullan\u305 r.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h3\cf3 \strokec3 >c. Ki\uc0\u351 isel Veriler:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Uygulama, kullan\uc0\u305 c\u305 n\u305 n ad\u305 , e-posta adresi, telefon numaras\u305  gibi ki\u351 isel kimlik bilgilerini <\cf7 \strokec7 strong\cf3 \strokec3 >toplamaz, istemez ve kaydetmez.</\cf7 \strokec7 strong\cf3 \strokec3 ></\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h2\cf3 \strokec3 >2. Veri Saklama ve G\'fcvenlik (Core Data)</\cf7 \strokec7 h2\cf3 \strokec3 >\
+            \
+            <\cf7 \strokec7 h3\cf3 \strokec3 >a. Yerel Depolama:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Speed Lab, ger\'e7ekle\uc0\u351 tirdi\u287 iniz s\'fcr\'fc\u351 lere ait performans verilerini (s\'fcre, mesafe, h\u305 z, tarih vb.) Apple'\u305 n <\cf7 \strokec7 strong\cf3 \strokec3 >Core Data</\cf7 \strokec7 strong\cf3 \strokec3 > teknolojisini kullanarak sadece cihaz\uc0\u305 n\u305 zda yerel olarak (locally) saklar.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h3\cf3 \strokec3 >b. Sunucu ve Bulut \uc0\u304 leti\u351 imi:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Uygulama, toplad\uc0\u305 \u287 \u305  verileri herhangi bir d\u305 \u351  sunucuya, bulut depolama hizmetine veya \'fc\'e7\'fcnc\'fc taraf servislere <\cf7 \strokec7 strong\cf3 \strokec3 >g\'f6ndermez.</\cf7 \strokec7 strong\cf3 \strokec3 > Verileriniz cihaz\uc0\u305 n\u305 z\u305 n d\u305 \u351 \u305 na \'e7\u305 kmaz.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h3\cf3 \strokec3 >c. Veri Silinmesi:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Uygulama cihazdan silindi\uc0\u287 inde, yerel olarak tutulan t\'fcm s\'fcr\'fc\u351  ge\'e7mi\u351 i ve veriler kal\u305 c\u305  olarak silinir. Bu verilerin kurtar\u305 lmas\u305  geli\u351 tirici taraf\u305 ndan m\'fcmk\'fcn de\u287 ildir.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h2\cf3 \strokec3 >3. Sorumluluk Reddi (\'d6l\'e7\'fcm Do\uc0\u287 rulu\u287 u)</\cf7 \strokec7 h2\cf3 \strokec3 >\
+            \
+            <\cf7 \strokec7 h3\cf3 \strokec3 >a. Referans Ama\'e7l\uc0\u305 d\u305 r:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Speed Lab taraf\uc0\u305 ndan sunulan \'f6l\'e7\'fcm sonu\'e7lar\u305  (0-100 s\'fcresi, fren mesafesi, G-kuvveti vb.) cihaz\u305 n\u305 z\u305 n GPS ve sens\'f6r kalitesine ba\u287 l\u305 d\u305 r. Bu veriler profesyonel telemetri cihazlar\u305 yla (VBOX, Dragy vb.) birebir ayn\u305  olmayabilir.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h3\cf3 \strokec3 >b. Garanti Yoktur:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Geli\uc0\u351 tirici, \'f6l\'e7\'fcmlerin %100 do\u287 rulu\u287 unu garanti etmez. Uygulama verileri resmi kay\u305 t, yar\u305 \u351  sonucu veya yasal kan\u305 t olarak kullan\u305 lamaz.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h2\cf3 \strokec3 >4. Kullan\uc0\u305 m Alan\u305  ve G\'fcvenlik Uyar\u305 lar\u305 </\cf7 \strokec7 h2\cf3 \strokec3 >\
+            \
+            <\cf7 \strokec7 h3\cf3 \strokec3 >a. Sadece Pist ve Trafi\uc0\u287 e Kapal\u305  Alanlar:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Speed Lab, <\cf7 \strokec7 strong\cf3 \strokec3 >sadece trafi\uc0\u287 e kapal\u305  alanlarda</\cf7 \strokec7 strong\cf3 \strokec3 >, yar\uc0\u305 \u351  pistlerinde veya g\'fcvenli \'f6zel m\'fclklerde kullan\u305 lmak \'fczere tasarlanm\u305 \u351 t\u305 r. Uygulaman\u305 n halka a\'e7\u305 k karayollar\u305 nda, trafikte veya trafik kurallar\u305 n\u305 n ge\'e7erli oldu\u287 u alanlarda kullan\u305 lmas\u305  <\cf7 \strokec7 strong\cf3 \strokec3 >kesinlikle yasakt\uc0\u305 r.</\cf7 \strokec7 strong\cf3 \strokec3 ></\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h3\cf3 \strokec3 >b. Trafik Kurallar\uc0\u305 :</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Kullan\uc0\u305 c\u305 , bulundu\u287 u \'fclkenin trafik kurallar\u305 na ve h\u305 z s\u305 n\u305 rlar\u305 na uymakla y\'fck\'fcml\'fcd\'fcr. Uygulama, kullan\u305 c\u305 n\u305 n trafik kurallar\u305 n\u305  ihlal etmesini te\u351 vik etmez.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h2\cf3 \strokec3 >5. Yasal Sorumluluk ve Feragatname</\cf7 \strokec7 h2\cf3 \strokec3 >\
+            \
+            <\cf7 \strokec7 h3\cf3 \strokec3 >a. Maddi ve Manevi Zararlar:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Uygulaman\uc0\u305 n kullan\u305 m\u305  s\u305 ras\u305 nda olu\u351 abilecek her t\'fcrl\'fc trafik kazas\u305 , ara\'e7 hasar\u305 , yaralanma, can kayb\u305 , trafik cezas\u305  veya \'fc\'e7\'fcnc\'fc \u351 ah\u305 slara verilen zararlardan <\cf7 \strokec7 strong\cf3 \strokec3 >tamamen kullan\uc0\u305 c\u305  sorumludur.</\cf7 \strokec7 strong\cf3 \strokec3 ></\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h3\cf3 \strokec3 >b. Geli\uc0\u351 tirici Sorumlulu\u287 u:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Uygulama geli\uc0\u351 tiricisi (Abdurrahman Ar\u305 can), uygulaman\u305 n kullan\u305 m\u305  sonucunda do\u287 abilecek do\u287 rudan veya dolayl\u305  hi\'e7bir maddi veya manevi zarardan sorumlu tutulamaz. Kullan\u305 c\u305 , uygulamay\u305  kendi riski alt\u305 nda kulland\u305 \u287 \u305 n\u305  kabul eder.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h2\cf3 \strokec3 >6. \uc0\u304 leti\u351 im</\cf7 \strokec7 h2\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Bu gizlilik politikas\uc0\u305  veya uygulaman\u305 n kullan\u305 m\u305  ile ilgili sorular\u305 n\u305 z i\'e7in bizimle ileti\u351 ime ge\'e7ebilirsiniz.</\cf7 \strokec7 p\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 ><\cf7 \strokec7 strong\cf3 \strokec3 >E-posta:</\cf7 \strokec7 strong\cf3 \strokec3 > <\cf7 \strokec7 a\cf3 \strokec3  \cf8 \strokec8 href\cf3 \strokec3 =\cf9 \strokec9 "mailto:a.arican777@gmail.com"\cf3 \strokec3 >a.arican777@gmail.com</\cf7 \strokec7 a\cf3 \strokec3 ></\cf7 \strokec7 p\cf3 \strokec3 >\
+        </\cf7 \strokec7 div\cf3 \strokec3 >\
+\
+        <\cf7 \strokec7 div\cf3 \strokec3  \cf8 \strokec8 id\cf3 \strokec3 =\cf9 \strokec9 "content-en"\cf3 \strokec3  \cf8 \strokec8 class\cf3 \strokec3 =\cf9 \strokec9 "hidden"\cf3 \strokec3 >\
+            <\cf7 \strokec7 h1\cf3 \strokec3 >Speed Lab - Privacy Policy & Terms of Use</\cf7 \strokec7 h1\cf3 \strokec3 >\
+            <\cf7 \strokec7 span\cf3 \strokec3  \cf8 \strokec8 class\cf3 \strokec3 =\cf9 \strokec9 "date"\cf3 \strokec3 >Last Updated: February 06, 2026</\cf7 \strokec7 span\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 p\cf3 \strokec3 >This Privacy Policy and Terms of Use ("Agreement") determines the use, data collected, and user responsibilities of the <\cf7 \strokec7 strong\cf3 \strokec3 >Speed Lab</\cf7 \strokec7 strong\cf3 \strokec3 > ("App") mobile application. By downloading and using the Application, you are deemed to have accepted all the terms stated below.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h2\cf3 \strokec3 >1. Collected Data and Purpose of Use</\cf7 \strokec7 h2\cf3 \strokec3 >\
+            \
+            <\cf7 \strokec7 h3\cf3 \strokec3 >a. Location Data:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Speed Lab uses your device's GPS (Location) data to measure performance values such as acceleration (0-100 km/h, 0-200 km/h), braking distance (100-0 km/h), and maximum speed. This data is used for instantaneous calculation purposes.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h3\cf3 \strokec3 >b. Motion Sensors:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >The application uses your device's accelerometer and gyroscope sensors for G-Force measurements.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h3\cf3 \strokec3 >c. Personal Data:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >The application <\cf7 \strokec7 strong\cf3 \strokec3 >does not collect, request, or store</\cf7 \strokec7 strong\cf3 \strokec3 > personal identification information such as the user's name, e-mail address, or phone number.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h2\cf3 \strokec3 >2. Data Storage and Security (Core Data)</\cf7 \strokec7 h2\cf3 \strokec3 >\
+            \
+            <\cf7 \strokec7 h3\cf3 \strokec3 >a. Local Storage:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Speed Lab stores the performance data (time, distance, speed, date, etc.) of your drives <\cf7 \strokec7 strong\cf3 \strokec3 >locally on your device only</\cf7 \strokec7 strong\cf3 \strokec3 >, using Apple's <\cf7 \strokec7 strong\cf3 \strokec3 >Core Data</\cf7 \strokec7 strong\cf3 \strokec3 > technology.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h3\cf3 \strokec3 >b. Server and Cloud Communication:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >The application <\cf7 \strokec7 strong\cf3 \strokec3 >does not send</\cf7 \strokec7 strong\cf3 \strokec3 > the collected data to any external server, cloud storage service, or third-party services. Your data does not leave your device.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h3\cf3 \strokec3 >c. Data Deletion:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >When the application is deleted from the device, all drive history and data held locally are permanently deleted. Recovery of this data by the developer is not possible.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h2\cf3 \strokec3 >3. Disclaimer (Measurement Accuracy)</\cf7 \strokec7 h2\cf3 \strokec3 >\
+            \
+            <\cf7 \strokec7 h3\cf3 \strokec3 >a. For Reference Purposes:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Measurement results presented by Speed Lab (0-100 time, braking distance, G-force, etc.) depend on your device's GPS and sensor quality. These data may not be exactly the same as professional telemetry devices (VBOX, Dragy, etc.).</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h3\cf3 \strokec3 >b. No Warranty:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >The developer does not guarantee 100% accuracy of measurements. Application data cannot be used as official records, race results, or legal evidence.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h2\cf3 \strokec3 >4. Usage Area and Safety Warnings</\cf7 \strokec7 h2\cf3 \strokec3 >\
+            \
+            <\cf7 \strokec7 h3\cf3 \strokec3 >a. Track and Closed Areas Only:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >Speed Lab is designed to be used <\cf7 \strokec7 strong\cf3 \strokec3 >only in closed-to-traffic areas</\cf7 \strokec7 strong\cf3 \strokec3 >, race tracks, or safe private properties. The use of the application on public roads, in traffic, or in areas where traffic rules apply is <\cf7 \strokec7 strong\cf3 \strokec3 >strictly prohibited.</\cf7 \strokec7 strong\cf3 \strokec3 ></\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h3\cf3 \strokec3 >b. Traffic Rules:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >The user is obliged to comply with the traffic rules and speed limits of the country they are in. The application does not encourage the user to violate traffic rules.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h2\cf3 \strokec3 >5. Legal Liability and Disclaimer</\cf7 \strokec7 h2\cf3 \strokec3 >\
+            \
+            <\cf7 \strokec7 h3\cf3 \strokec3 >a. Material and Non-Material Damages:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >The user is <\cf7 \strokec7 strong\cf3 \strokec3 >solely responsible</\cf7 \strokec7 strong\cf3 \strokec3 > for any traffic accidents, vehicle damage, injury, loss of life, traffic fines, or damages caused to third parties that may occur during the use of the application.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h3\cf3 \strokec3 >b. Developer Liability:</\cf7 \strokec7 h3\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >The application developer (Abdurrahman Ar\uc0\u305 can) cannot be held liable for any direct or indirect material or non-material damages arising from the use of the application. The user accepts that they use the application at their own risk.</\cf7 \strokec7 p\cf3 \strokec3 >\
+\
+            <\cf7 \strokec7 h2\cf3 \strokec3 >6. Contact</\cf7 \strokec7 h2\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 >You can contact us for your questions regarding this privacy policy or the use of the application.</\cf7 \strokec7 p\cf3 \strokec3 >\
+            <\cf7 \strokec7 p\cf3 \strokec3 ><\cf7 \strokec7 strong\cf3 \strokec3 >E-mail:</\cf7 \strokec7 strong\cf3 \strokec3 > <\cf7 \strokec7 a\cf3 \strokec3  \cf8 \strokec8 href\cf3 \strokec3 =\cf9 \strokec9 "mailto:a.arican777@gmail.com"\cf3 \strokec3 >a.arican777@gmail.com</\cf7 \strokec7 a\cf3 \strokec3 ></\cf7 \strokec7 p\cf3 \strokec3 >\
+        </\cf7 \strokec7 div\cf3 \strokec3 >\
+\
+    </\cf7 \strokec7 div\cf3 \strokec3 >\
+\
+    <\cf7 \strokec7 footer\cf3 \strokec3 >\
+        \cf8 \strokec8 &copy;\cf3 \strokec3  2026 Speed Lab. All rights reserved.\
+    </\cf7 \strokec7 footer\cf3 \strokec3 >\
+</\cf7 \strokec7 div\cf3 \strokec3 >\
+\
+<\cf7 \strokec7 script\cf3 \strokec3 >\
+    \cf10 \strokec10 function\cf3 \strokec3  \cf12 \strokec12 switchLanguage\cf3 \strokec3 (lang) \{\
+        \cf10 \strokec10 const\cf3 \strokec3  trContent = \cf6 \strokec6 document\cf3 \strokec3 .getElementById(\cf9 \strokec9 'content-tr'\cf3 \strokec3 );\
+        \cf10 \strokec10 const\cf3 \strokec3  enContent = \cf6 \strokec6 document\cf3 \strokec3 .getElementById(\cf9 \strokec9 'content-en'\cf3 \strokec3 );\
+        \cf10 \strokec10 const\cf3 \strokec3  btns = \cf6 \strokec6 document\cf3 \strokec3 .querySelectorAll(\cf9 \strokec9 '.lang-btn'\cf3 \strokec3 );\
+\
+        \cf10 \strokec10 if\cf3 \strokec3  (lang === \cf9 \strokec9 'en'\cf3 \strokec3 ) \{\
+            trContent.classList.add(\cf9 \strokec9 'hidden'\cf3 \strokec3 );\
+            enContent.classList.remove(\cf9 \strokec9 'hidden'\cf3 \strokec3 );\
+            btns[\cf8 \strokec8 0\cf3 \strokec3 ].classList.remove(\cf9 \strokec9 'active'\cf3 \strokec3 );\
+            btns[\cf8 \strokec8 1\cf3 \strokec3 ].classList.add(\cf9 \strokec9 'active'\cf3 \strokec3 );\
+            \cf6 \strokec6 document\cf3 \strokec3 .documentElement.lang = \cf9 \strokec9 'en'\cf3 \strokec3 ;\
+        \} \cf10 \strokec10 else\cf3 \strokec3  \{\
+            enContent.classList.add(\cf9 \strokec9 'hidden'\cf3 \strokec3 );\
+            trContent.classList.remove(\cf9 \strokec9 'hidden'\cf3 \strokec3 );\
+            btns[\cf8 \strokec8 1\cf3 \strokec3 ].classList.remove(\cf9 \strokec9 'active'\cf3 \strokec3 );\
+            btns[\cf8 \strokec8 0\cf3 \strokec3 ].classList.add(\cf9 \strokec9 'active'\cf3 \strokec3 );\
+            \cf6 \strokec6 document\cf3 \strokec3 .documentElement.lang = \cf9 \strokec9 'tr'\cf3 \strokec3 ;\
+        \}\
+    \}\
+</\cf7 \strokec7 script\cf3 \strokec3 >\
+\
+</\cf7 \strokec7 body\cf3 \strokec3 >\
+</\cf7 \strokec7 html\cf3 \strokec3 >\
+}
