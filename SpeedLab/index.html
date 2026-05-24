@@ -139,7 +139,7 @@
         
         <div id="content-tr">
             <h1>Speed Lab - Gizlilik Politikası ve Kullanım Koşulları</h1>
-            <span class="date">Son Güncelleme: 05 Mart 2026</span>
+            <span class="date">Son Güncelleme: 24 Mayıs 2026</span>
 
             <p>Bu Gizlilik Politikası ve Kullanım Koşulları ("Sözleşme"), <strong>Speed Lab</strong> ("Uygulama") iOS ve Android mobil uygulamalarının kullanımı, toplanan veriler ve kullanıcı sorumluluklarını belirler. Uygulamayı indirerek ve kullanarak, aşağıda belirtilen tüm şartları kabul etmiş sayılırsınız.</p>
 
@@ -151,22 +151,25 @@
             <h3>b. Hareket Sensörleri (Motion Sensors):</h3>
             <p>Uygulama, G-Kuvveti (G-Force) ölçümleri için cihazınızın ivmeölçer ve jiroskop sensörlerini kullanır.</p>
 
-            <h3>c. Kişisel Veriler ve Reklam Kimliği (Sadece Android):</h3>
-            <p>Uygulama, kullanıcının adı, e-posta adresi, telefon numarası gibi kişisel kimlik bilgilerini <strong>toplamaz ve kaydetmez.</strong> <strong>iOS sürümünde hiçbir reklam gösterimi veya kullanıcı takibi (ATS) bulunmamaktadır.</strong> Ancak, uygulamanın <strong>yalnızca Android sürümünde</strong> size uygulama içi banner reklamlar gösterebilmek için cihazınızın Reklam Kimliği (Advertising ID) ve standart cihaz bilgileri, üçüncü taraf reklam ortaklarımızla (Google AdMob) paylaşılır.</p>
+            <h3>c. Kişisel Veriler ve Reklam Kimliği (Android):</h3>
+            <p>Uygulama standart kullanımda kişisel kimlik bilgilerinizi toplamaz. Ancak uygulamanın <strong>yalnızca Android sürümünde</strong> size uygulama içi banner reklamlar gösterebilmek için cihazınızın Reklam Kimliği (Advertising ID) ve standart cihaz bilgileri, üçüncü taraf reklam ortaklarımızla (Google AdMob) paylaşılır.</p>
 
-            <h3>d. Üçüncü Taraf Hizmetleri (Google AdMob - Sadece Android):</h3>
-            <p>Speed Lab'in <strong>sadece Android sürümü</strong>, reklam sunmak için Google AdMob kullanır. AdMob, kullanıcılara daha alakalı reklamlar sunmak amacıyla çerezleri ve Reklam Kimliğinizi işleyebilir. Daha fazla bilgi için <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası</a>'nı inceleyebilirsiniz.</p>
+            <h3>d. Liderlik Tablosu ve Apple ile Giriş (Sadece iOS):</h3>
+            <p>Uygulamanın iOS sürümünde "Apple ile Giriş Yap" (Sign in with Apple) özelliği bulunmaktadır. Sürüş verilerinizi Liderlik Tablosunda (Leaderboard) paylaşmak isterseniz, isteğiniz doğrultusunda şu veriler toplanır ve veritabanımıza (Firebase) kaydedilir: <strong>Kullanıcı adınız, araç modeliniz, paylaştığınız sürüş verileri (süre, hız vb.), yaşadığınız ülke/şehir ve paylaşım anındaki anlık konumunuz.</strong> Bu paylaşım tamamen sizin onayınıza bağlıdır.</p>
 
-            <h2>2. Veri Saklama ve Güvenlik</h2>
+            <h3>e. Üçüncü Taraf Hizmetleri:</h3>
+            <p>Speed Lab'in Android sürümü reklam sunmak için Google AdMob kullanır. iOS sürümünde Liderlik Tablosu altyapısı için Google Firebase kullanılmaktadır. Daha fazla bilgi için <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası</a>'nı inceleyebilirsiniz.</p>
+
+            <h2>2. Veri Saklama, Güvenlik ve Silme</h2>
             
             <h3>a. Yerel Depolama (Local Storage):</h3>
-            <p>Speed Lab, gerçekleştirdiğiniz sürüşlere ait performans verilerini sadece cihazınızda yerel olarak saklar. Bu işlem için <strong>iOS cihazlarda Core Data</strong>, <strong>Android cihazlarda ise SQLite</strong> veritabanı teknolojileri kullanılır.</p>
+            <p>Speed Lab, gerçekleştirdiğiniz sürüşlere ait performans verilerini varsayılan olarak cihazınızda yerel olarak (iOS cihazlarda Core Data, Android cihazlarda SQLite) saklar.</p>
 
             <h3>b. Sunucu ve Bulut İletişimi:</h3>
-            <p>Uygulama, sürüş performansınıza ait topladığı verileri hiçbir şekilde dış sunucuya veya bulut depolama hizmetine <strong>göndermez.</strong> Verileriniz cihazınızın dışına çıkmaz.</p>
+            <p>Sürüş performansınıza ait veriler <strong>siz Liderlik Tablosuna göndermeyi onaylamadıkça</strong> hiçbir dış sunucuya aktarılmaz. Liderlik tablosunda paylaşmayı seçtiğiniz veriler ise güvenli bir şekilde Firebase sunucularında tutulur.</p>
 
-            <h3>c. Veri Silinmesi:</h3>
-            <p>Uygulama cihazdan silindiğinde veya uygulama verileri temizlendiğinde, yerel olarak tutulan tüm sürüş geçmişi ve veriler kalıcı olarak silinir. Bu verilerin kurtarılması geliştirici tarafından mümkün değildir.</p>
+            <h3>c. Hesap ve Veri Silinmesi:</h3>
+            <p>Uygulama içindeki ayarlar menüsünden istediğiniz zaman hesabınızdan çıkış yapabilir veya <strong>hesabınızı silebilirsiniz.</strong> Hesabınızı sildiğinizde, Liderlik Tablosunda paylaştığınız tüm veriler, konum bilgileriniz, araç modeliniz ve kullanıcı adınız Firebase sunucularından <strong>kalıcı olarak silinir.</strong> Yalnızca cihazınızda yerel olarak tutulan veriler, siz uygulamayı silene kadar cihazınızda kalmaya devam eder.</p>
 
             <h2>3. Sorumluluk Reddi (Ölçüm Doğruluğu)</h2>
             
@@ -190,7 +193,7 @@
             <p>Uygulamanın kullanımı sırasında oluşabilecek her türlü trafik kazası, araç hasarı, yaralanma, can kaybı, trafik cezası veya üçüncü şahıslara verilen zararlardan <strong>tamamen kullanıcı sorumludur.</strong></p>
 
             <h3>b. Geliştirici Sorumluluğu:</h3>
-            <p>Uygulama geliştiricisi (Abdurrahman Arıcan), uygulamanın kullanımı sonucunda doğabilecek hiçbir zarardan sorumlu tutulamaz. Kullanıcı, uygulamayı kendi riski altında kullandığını kabul eder.</p>
+            <p>Uygulama geliştiricisi, uygulamanın kullanımı sonucunda doğabilecek hiçbir zarardan sorumlu tutulamaz. Kullanıcı, uygulamayı kendi riski altında kullandığını kabul eder.</p>
 
             <h2>6. İletişim</h2>
             <p>Bu gizlilik politikası veya uygulamanın kullanımı ile ilgili sorularınız için bizimle iletişime geçebilirsiniz.</p>
@@ -199,7 +202,7 @@
 
         <div id="content-en" class="hidden">
             <h1>Speed Lab - Privacy Policy & Terms of Use</h1>
-            <span class="date">Last Updated: March 05, 2026</span>
+            <span class="date">Last Updated: May 24, 2026</span>
 
             <p>This Privacy Policy and Terms of Use ("Agreement") determines the use, data collected, and user responsibilities of the <strong>Speed Lab</strong> ("App") iOS and Android mobile applications. By downloading and using the Application, you are deemed to have accepted all the terms stated below.</p>
 
@@ -212,21 +215,24 @@
             <p>The application uses your device's accelerometer and gyroscope sensors for G-Force measurements.</p>
 
             <h3>c. Personal Data and Advertising ID (Android Only):</h3>
-            <p>The application <strong>does not collect or store</strong> personal identification information. <strong>The iOS version does not contain any ad display or user tracking (ATS).</strong> However, <strong>only in the Android version</strong>, your device's Advertising ID and standard device information are shared with our third-party advertising partners (Google AdMob) to serve you in-app banner ads.</p>
+            <p>The application does not collect personal identification information during standard local use. However, <strong>only in the Android version</strong>, your device's Advertising ID and standard device information are shared with our third-party advertising partners (Google AdMob) to serve you in-app banner ads.</p>
 
-            <h3>d. Third-Party Services (Google AdMob - Android Only):</h3>
-            <p><strong>Only the Android version</strong> of Speed Lab uses Google AdMob to display ads. AdMob may process your Advertising ID to serve more relevant ads. For more information, you can review the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</p>
+            <h3>d. Leaderboard and Sign in with Apple (iOS Only):</h3>
+            <p>The iOS version features "Sign in with Apple". If you choose to share your driving data on the global Leaderboard, the following information is collected and stored in our database (Firebase): <strong>Your username, vehicle model, shared driving data (time, speed, etc.), your country/city, and your location at the time of sharing.</strong> This sharing is entirely optional and depends on your consent.</p>
 
-            <h2>2. Data Storage and Security</h2>
+            <h3>e. Third-Party Services:</h3>
+            <p>The Android version of Speed Lab uses Google AdMob to display ads. The iOS version uses Google Firebase for the Leaderboard infrastructure. For more information, you can review the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</p>
+
+            <h2>2. Data Storage, Security and Deletion</h2>
             
             <h3>a. Local Storage:</h3>
-            <p>Speed Lab stores the performance data of your drives locally on your device only. This process uses <strong>Core Data on iOS devices</strong> and <strong>SQLite on Android devices</strong>.</p>
+            <p>By default, Speed Lab stores the performance data of your drives locally on your device (using Core Data on iOS and SQLite on Android).</p>
 
             <h3>b. Server and Cloud Communication:</h3>
-            <p>The application <strong>does not send</strong> your driving performance data to any external server or cloud storage service. Your data does not leave your device.</p>
+            <p>Your driving performance data <strong>is not sent</strong> to any external server <strong>unless you explicitly share it to the Leaderboard</strong>. Data you choose to share is securely stored on Firebase servers.</p>
 
-            <h3>c. Data Deletion:</h3>
-            <p>When the application is deleted from the device or the app data is cleared, all drive history and data held locally are permanently deleted. Recovery of this data by the developer is not possible.</p>
+            <h3>c. Account and Data Deletion:</h3>
+            <p>You can sign out or <strong>delete your account</strong> at any time via the settings menu within the app. When you delete your account, all your shared Leaderboard data, location information, vehicle model, and username are <strong>permanently deleted</strong> from our Firebase servers. Data stored locally on your device remains until you delete the application itself.</p>
 
             <h2>3. Disclaimer (Measurement Accuracy)</h2>
             
@@ -250,7 +256,7 @@
             <p>The user is <strong>solely responsible</strong> for any traffic accidents, vehicle damage, injury, loss of life, traffic fines, or damages caused to third parties that may occur during the use of the application.</p>
 
             <h3>b. Developer Liability:</h3>
-            <p>The application developer (Abdurrahman Arıcan) cannot be held liable for any damages arising from the use of the application. The user accepts that they use the application at their own risk.</p>
+            <p>The application developer cannot be held liable for any damages arising from the use of the application. The user accepts that they use the application at their own risk.</p>
 
             <h2>6. Contact</h2>
             <p>You can contact us for your questions regarding this privacy policy or the use of the application.</p>
